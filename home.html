@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração básica do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elo Social</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="homestyle.css">
+    
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+    
+    <!-- Importação de fontes do Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:wght@100;200;300;400&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="logo">
+            <!-- Logo do site -->
+            <img src="img/elo.png" alt="Logo Elo Social">
+        </div>
+        <nav>
+            <!-- Menu de navegação -->
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="seja voluntario.html" target="_blank">Seja voluntário</a></li>
+                <li><a href="divulgue.html" target="_blank">Divulgue</a></li>
+                <li><a href="doe.html" target="_blank">Doe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="hero">
+            <!-- Título principal -->
+            <h1 id="elo-social">Elo Social</h1>
+            <div class="cubes-container">
+                <!-- Blocos de informações -->
+                <div class="cube">
+                    <p>Um espaço que facilita a conexão entre ONGs e pessoas interessadas em colaborar com projetos sociais.</p>
+                </div>
+                <div class="cube">
+                    <p>Nossa plataforma oferece ferramentas completas para divulgação de projetos, arrecadação de doações, cadastro de voluntários e divulgação de notícias relevantes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="pagination">
+            <!-- Paginação para navegação entre páginas -->
+            <span id="link-home">01</span> <hr> <span id="link-seja-voluntario">02</span> <span id="link-divulgue">03</span> <span id="link-doe">04</span>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        // Adiciona um evento de clique ao título para alternar a classe 'move'
+        document.getElementById('elo-social').addEventListener('click', function() {
+            this.classList.toggle('move');
+        });
+
+        // Redireciona para a página 'home.html' ao clicar no número 01
+        document.getElementById('link-home').addEventListener('click', function() {
+            window.location.href = 'home.html';
+        });
+
+        // Redireciona para a página 'seja voluntario.html' ao clicar no número 02
+        document.getElementById('link-seja-voluntario').addEventListener('click', function() {
+            window.location.href = 'seja voluntario.html';
+        });
+
+        // Redireciona para a página 'divulgue.html' ao clicar no número 03
+        document.getElementById('link-divulgue').addEventListener('click', function() {
+            window.location.href = 'divulgue.html';
+        });
+
+        // Redireciona para a página 'doe.html' ao clicar no número 04
+        document.getElementById('link-doe').addEventListener('click', function() {
+            window.location.href = 'doe.html';
+        });
+    </script>
+</body>
+</html>

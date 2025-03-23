@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Seja voluntário</title>  
+    <link rel="stylesheet" href="homestyle.css"> <!-- Link para o CSS do estilo da página -->  
+    <script src="script.js"></script> <!-- Link para o JavaScript externo -->  
+
+    <style>  
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');  
+       /* Importação da fonte Poppins do Google Fonts */   
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <div class="logo">  
+            <img src="img/elo.png" alt="Logo Elo Social"> <!-- Logo da instituição -->  
+        </div>  
+        <nav>  
+            <ul>  
+                <li><a href="home.html" target="_blank">Home</a></li> <!-- Link para a página inicial -->  
+                <li><a href="seja voluntario.html" target="_blank">Seja voluntário</a></li> <!-- Link para a página de inscrição -->  
+                <li><a href="divulgue.html" target="_blank">Divulgue</a></li> <!-- Link para a página de divulgação -->  
+                <li><a href="doe.html" target="_blank">Doe</a></li> <!-- Link para a página de doações -->  
+            </ul>  
+        </nav>  
+    </header>  
+
+    <div class="container">  
+        <h2>Se inscreva aqui para ser voluntário!</h2>  
+
+        <form action="#" method="post"> <!-- O 'action' deve ser apontado para o script de processamento adequado -->  
+            <div class="form-group">  
+                <label for="nome">Nome completo</label>  
+                <input type="text" id="nome" name="nome" placeholder="Primeiro nome" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="sobrenome">Sobrenome</label>  
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Segundo nome" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="email">Endereço de e-mail</label>  
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="telefone">Telefone</label>  
+                <input type="tel" id="telefone" name="telefone" placeholder="DDD" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="cep">CEP</label>  
+                <input type="text" id="cep" name="cep" placeholder="00000-000" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="logradouro">Logradouro</label>  
+                <input type="text" id="logradouro" name="logradouro" placeholder="Rua..." required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="numero">Nº</label>  
+                <input type="text" id="numero" name="numero" placeholder="000" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label>Você tem experiência recente em trabalho voluntário?</label>   
+                <div class="radio-group">  
+                    <input type="radio" id="sim" name="experiencia" value="Sim" required>  
+                    <label for="sim">Sim</label>  
+                    <input type="radio" id="nao" name="experiencia" value="Não" required>  
+                    <label for="nao">Não</label>  
+                </div>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="area">Área de interesse</label>  
+                <select id="area" name="area" required>  
+                    <option value="">Por favor selecione</option>  
+                    <option value="Educação">Educação</option>  
+                    <option value="Saúde">Saúde</option>  
+                    <option value="Meio Ambiente">Meio Ambiente</option>  
+                </select>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="horario">Qual o melhor horário?</label>  
+                <input type="text" id="horario" name="horario" placeholder="Selecione aqui" required> <!-- Melhor usar um tipo de input adequado para horários -->  
+            </div>  
+
+            <div class="form-group" style="flex: 2;">  
+                <label for="motivacao">Por que você gostaria de ser voluntário?</label>  
+                <textarea id="motivacao" name="motivacao" placeholder="Escreva aqui..." required></textarea>  
+            </div>  
+
+            <button type="submit">Enviar Inscrição</button> <!-- Botão para enviar o formulário -->  
+        </form>  
+    </div>  
+    <footer>  
+        <div class="pagination">  
+            <span id="link-home">01</span> <hr> <span id="link-seja-voluntario">02</span> <span id="link-divulgue">03</span> <span id="link-doe">04</span>  
+        </div>  
+    </footer>  
+    <script>  
+        // Adiciona um evento a um elemento com ID 'elo-social' (verificar se o ID existe, pois não está presente no HTML)  
+        document.getElementById('elo-social')?.addEventListener('click', function() {  
+            this.classList.toggle('move');  
+        });  
+
+        // Adiciona um evento de click ao número 01 que redireciona para home.html  
+        document.getElementById('link-home').addEventListener('click', function() {  
+            window.location.href = 'home.html';  
+        });  
+
+        // Adiciona um evento de click ao número 02 que redireciona para seja voluntario.html  
+        document.getElementById('link-seja-voluntario').addEventListener('click', function() {  
+            window.location.href = 'seja voluntario.html';  
+        });  
