@@ -1,6 +1,7 @@
 # Elo-social
 Documentação do Site Elo Social
-Estrutura do Projeto
+
+# Estrutura do Projeto
 
 O projeto é composto por quatro páginas principais:
 
@@ -11,14 +12,14 @@ Doe: Página para doações simbólicas.
 
 Cada página possui um cabeçalho com navegação, um corpo principal e um rodapé com paginação.
 
-Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 HTML5: Estruturação do conteúdo.
 CSS3: Estilização e layout.
 JavaScript: Interatividade e validações.
 Google Fonts: Fontes personalizadas.
 
-Detalhes das Páginas
+# Detalhes das Páginas
 
 1. Home
 Descrição: Apresenta o projeto "Elo Social" e suas funcionalidades.
@@ -51,7 +52,7 @@ Opções de periodicidade (mensal, única vez, semanal).
 Valores pré-definidos e campo para outro valor.
 Botão de doação com validação.
 
-Estilização (CSS)
+# Estilização (CSS)
 
 Reset básico: Margens, paddings e box-sizing.
 Fontes: Uso das fontes "Poppins" e "Grey Qo".
@@ -60,7 +61,7 @@ Responsividade:
 Ajustes para telas menores (1024px e 768px).
 Campos do formulário ocupam 100% da largura em dispositivos móveis.
 
-Scripts (JavaScript)
+# Scripts (JavaScript)
 
 Eventos de clique:
 Navegação entre páginas.
@@ -70,7 +71,7 @@ Validações:
 Campos obrigatórios no formulário de voluntários.
 Validação de e-mail e telefone.
 
-Observações
+# Observações
 
 Imagens: As imagens utilizadas são armazenadas na pasta img/.
 Scripts e estilos externos:
@@ -78,7 +79,7 @@ Arquivo CSS: homestyle.css
 Arquivo JS: script.js
 Aviso: A página "Doe" é apenas para fins educativos e não processa doações reais.
 
-Melhorias Futuras
+# Melhorias Futuras
 
 Implementar backend para processar formulários e doações.
 Adicionar banco de dados para armazenar informações de voluntários e postagens.
