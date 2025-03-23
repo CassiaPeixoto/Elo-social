@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divulgue</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:wght@100;200;300;400&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/elo.png" alt="Logo Elo Social">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="seja voluntario.html" target="_blank">Seja voluntário</a></li>
+                <li><a href="divulgue.html" target="_blank">Divulgue</a></li>
+                <li><a href="doe.html" target="_blank">Doe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="feed-container">
+        <p class="feed-text">Poste aqui <span>eventos</span>, <span>projetos</span> e <span>causas</span> da sua ONG.</p>
+        <div class="feed">
+            <div class="post">
+                <img src="img/mao.jpg" alt="aperto de mao">
+                <div class="interaction-icons">
+                    <img class="icon" src="img/coracao.png" alt="Coração" data-action="like">
+                    <img class="icon" src="img/enviar.png" alt="Enviar" data-action="share">
+                    <img class="icon" src="img/comentario.png" alt="Comentário" data-action="comment">
+                    <img class="icon" src="img/favorito.png" alt="Favorito" data-action="favorite">
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pessoas.jpg" alt="pessoas">
+                <div class="interaction-icons">
+                    <img class="icon" src="img/coracao.png" alt="Coração" data-action="like">
+                    <img class="icon" src="img/enviar.png" alt="Enviar" data-action="share">
+                    <img class="icon" src="img/comentario.png" alt="Comentário" data-action="comment">
+                    <img class="icon" src="img/favorito.png" alt="Favorito" data-action="favorite">
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/abraco.jpg" alt="Imagem 3">
+                <div class="interaction-icons">
+                    <img class="icon" src="img/coracao.png" alt="Coração" data-action="like">
+                    <img class="icon" src="img/enviar.png" alt="Enviar" data-action="share">
+                    <img class="icon" src="img/comentario.png" alt="Comentário" data-action="comment">
+                    <img class="icon" src="img/favorito.png" alt="Favorito" data-action="favorite">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>  
+        <div class="pagination">  
+            <span id="link-home">01</span> <hr> <span id="link-seja-voluntario">02</span> <span id="link-divulgue">03</span> <span id="link-doe">04</span>  
+        </div>  
+    </footer>  
+    <script>  
+        document.getElementById('elo-social').addEventListener('click', function() {  
+            this.classList.toggle('move');  
+        });  
+
+        // Adiciona um evento de click ao número 01 que redireciona para home.html  
+        document.getElementById('link-home').addEventListener('click', function() {  
+            window.location.href = 'home.html';  
+        });  
+
+        // Adiciona um evento de click ao número 02 que redireciona para seja voluntario.html  
+        document.getElementById('link-seja-voluntario').addEventListener('click', function() {  
+            window.location.href = 'seja voluntario.html';  
+        });  
+
+        // Adiciona um evento de click ao número 03 que redireciona para divulgue.html  
+        document.getElementById('link-divulgue').addEventListener('click', function() {  
+            window.location.href = 'divulgue.html';  
+        });  
+
+        // Adiciona um evento de click ao número 04 que redireciona para doe.html  
+        document.getElementById('link-doe').addEventListener('click', function() {  
+            window.location.href = 'doe.html';  
+        });  
+    </script>  
+</body>
+</html>

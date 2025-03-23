@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:wght@100;200;300;400&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/elo.png" alt="Logo Elo Social">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="seja voluntario.html" target="_blank">Seja voluntário</a></li>
+                <li><a href="divulgue.html" target="_blank">Divulgue</a></li>
+                <li><a href="doe.html" target="_blank">Doe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center-text">
+        Ajude a contribuir com a evolução e a manter as ONGs com <span>seu apoio</span>, podemos fazer a diferença, <span>doe</span> algum valor simbólico ou <span>compartilhe</span> a página.
+        <img src="img/ajuda.png" alt="ajuda">
+    </div>
+    <div class="container">
+        <h2>Escolha uma opção</h2>
+        <div class="options">
+            <button class="option-button" data-option="Mensal">Mensal</button>
+            <button class="option-button" data-option="Uma única vez">Uma única vez</button>
+            <button class="option-button" data-option="Semanalmente">Semanalmente</button>
+        </div>
+        <h2>Escolha o valor desejado</h2>
+        <div class="values">
+            <button class="value-button" data-value="20">R$20</button>
+            <button class="value-button" data-value="40">R$40</button>
+            <button class="value-button" data-value="60">R$60</button>
+            <button class="value-button" data-value="80">R$80</button>
+            <button class="value-button" data-value="100">R$100</button>
+            <button class="value-button" data-value="Outro valor">Outro valor</button>
+        </div>
+        <button class="donate-button">Doar</button>
+        <div class="warning">
+            ⚠️ Atenção: esse site foi desenvolvido para fins educativos, portanto não receberá doações.
+        </div>
+        <footer>  
+            <div class="pagination">  
+                <span id="link-home">01</span> <hr> <span id="link-seja-voluntario">02</span> <span id="link-divulgue">03</span> <span id="link-doe">04</span>  
+            </div>  
+        </footer>  
+        <script>  
+            document.getElementById('elo-social').addEventListener('click', function() {  
+                this.classList.toggle('move');  
+            });  
+    
+            // Adiciona um evento de click ao número 01 que redireciona para home.html  
+            document.getElementById('link-home').addEventListener('click', function() {  
+                window.location.href = 'home.html';  
+            });  
+    
+            // Adiciona um evento de click ao número 02 que redireciona para seja voluntario.html  
+            document.getElementById('link-seja-voluntario').addEventListener('click', function() {  
+                window.location.href = 'seja voluntario.html';  
+            });  
+    
+            // Adiciona um evento de click ao número 03 que redireciona para divulgue.html  
+            document.getElementById('link-divulgue').addEventListener('click', function() {  
+                window.location.href = 'divulgue.html';  
+            });  
+    
+            // Adiciona um evento de click ao número 04 que redireciona para doe.html  
+            document.getElementById('link-doe').addEventListener('click', function() {  
+                window.location.href = 'doe.html';  
+            });  
+        </script>  
+    </div>
+</body>
+</html>

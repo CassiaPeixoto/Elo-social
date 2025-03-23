@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Elo Social</title>  
+    <link rel="stylesheet" href="homestyle.css"> 
+    <script src="script.js"></script>
+    <style>  
+        @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:wght@100;200;300;400&display=swap');  
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <div class="logo">  
+            <img src="img/elo.png" alt="Logo Elo Social">  
+        </div>  
+        <nav>  
+            <ul>  
+                <li><a href="home.html" target="_blank">Home</a></li>  
+                <li><a href="seja voluntario.html" target="_blank">Seja voluntário</a></li>  
+                <li><a href="divulgue.html" target="_blank">Divulgue</a></li>  
+                <li><a href="doe.html" target="_blank">Doe</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+
+    <main>  
+        <section class="hero">  
+            <h1 id="elo-social">Elo Social</h1>  
+            <div class="cubes-container">  
+                <div class="cube">  
+                    <p>Um espaço que facilita a conexão entre ONGs e pessoas interessadas em colaborar com projetos sociais.</p>  
+                </div>  
+                <div class="cube">  
+                    <p>Nossa plataforma oferece ferramentas completas para divulgação de projetos, arrecadação de doações, cadastro de voluntários e divulgação de notícias relevantes.</p>  
+                </div>  
+            </div>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <div class="pagination">  
+            <span id="link-home">01</span> <hr> <span id="link-seja-voluntario">02</span> <span id="link-divulgue">03</span> <span id="link-doe">04</span>  
+        </div>  
+    </footer>  
+
+    <script>  
+        document.getElementById('elo-social').addEventListener('click', function() {  
+            this.classList.toggle('move');  
+        });  
+
+        // Adiciona um evento de click ao número 01 que redireciona para home.html  
+        document.getElementById('link-home').addEventListener('click', function() {  
+            window.location.href = 'home.html';  
+        });  
+
+        // Adiciona um evento de click ao número 02 que redireciona para seja voluntario.html  
+        document.getElementById('link-seja-voluntario').addEventListener('click', function() {  
+            window.location.href = 'seja voluntario.html';  
+        });  
+
+        // Adiciona um evento de click ao número 03 que redireciona para divulgue.html  
+        document.getElementById('link-divulgue').addEventListener('click', function() {  
+            window.location.href = 'divulgue.html';  
+        });  
+
+        // Adiciona um evento de click ao número 04 que redireciona para doe.html  
+        document.getElementById('link-doe').addEventListener('click', function() {  
+            window.location.href = 'doe.html';  
+        });  
+    </script>  
+</body>  
+</html>  
