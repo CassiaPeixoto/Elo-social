@@ -5,19 +5,19 @@ Documentação do Site Elo Social
 
 O projeto é composto por quatro páginas principais:
 
-Home: Página inicial com informações gerais sobre o projeto.
-Seja Voluntário: Formulário para inscrição de voluntários.
-Divulgue: Área para postagem de eventos e projetos.
-Doe: Página para doações simbólicas.
+*Home: Página inicial com informações gerais sobre o projeto.
+*Seja Voluntário: Formulário para inscrição de voluntários.
+*Divulgue: Área para postagem de eventos e projetos.
+*Doe: Página para doações simbólicas.
 
 Cada página possui um cabeçalho com navegação, um corpo principal e um rodapé com paginação.
 
 # Tecnologias Utilizadas
 
-HTML5: Estruturação do conteúdo.
-CSS3: Estilização e layout.
-JavaScript: Interatividade e validações.
-Google Fonts: Fontes personalizadas.
+*HTML5: Estruturação do conteúdo.
+*CSS3: Estilização e layout.
+*JavaScript: Interatividade e validações.
+*Google Fonts: Fontes personalizadas.
 
 # Detalhes das Páginas
 
@@ -54,10 +54,10 @@ Botão de doação com validação.
 
 # Estilização (CSS)
 
-Reset básico: Margens, paddings e box-sizing.
-Fontes: Uso das fontes "Poppins" e "Grey Qo".
-Cores: Paleta com tons de azul, verde e roxo.
-Responsividade:
+*Reset básico: Margens, paddings e box-sizing.
+*Fontes: Uso das fontes "Poppins" e "Grey Qo".
+*Cores: Paleta com tons de azul, verde e roxo.
+**Responsividade:
 Ajustes para telas menores (1024px e 768px).
 Campos do formulário ocupam 100% da largura em dispositivos móveis.
 
@@ -65,24 +65,24 @@ Campos do formulário ocupam 100% da largura em dispositivos móveis.
 
 Eventos de clique:
 Navegação entre páginas.
-Interações nos ícones da página "Divulgue".
-Seleção de opções e valores na página "Doe".
-Validações:
+*Interações nos ícones da página "Divulgue".
+*Seleção de opções e valores na página "Doe".
+*Validações:
 Campos obrigatórios no formulário de voluntários.
 Validação de e-mail e telefone.
 
 # Observações
 
-Imagens: As imagens utilizadas são armazenadas na pasta img/.
-Scripts e estilos externos:
-Arquivo CSS: homestyle.css
-Arquivo JS: script.js
-Aviso: A página "Doe" é apenas para fins educativos e não processa doações reais.
+*Imagens: As imagens utilizadas são armazenadas na pasta img/.
+*Scripts e estilos externos:
+*Arquivo CSS: homestyle.css
+*Arquivo JS: script.js
+*Aviso: A página "Doe" é apenas para fins educativos e não processa doações reais.
 
 # Melhorias Futuras
 
-Implementar backend para processar formulários e doações.
-Adicionar banco de dados para armazenar informações de voluntários e postagens.
-Melhorar a acessibilidade (uso de ARIA e contraste de cores).
+*Implementar backend para processar formulários e doações.
+*Adicionar banco de dados para armazenar informações de voluntários e postagens.
+*Melhorar a acessibilidade (uso de ARIA e contraste de cores).
 
 Essa documentação cobre os principais aspectos do projeto "Elo Social". Caso precise de mais detalhes ou ajustes, entre em contato.
